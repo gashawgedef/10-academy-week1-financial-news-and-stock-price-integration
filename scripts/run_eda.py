@@ -1,12 +1,20 @@
+import sys
+import os
+
+# Add the root directory to the Python path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/../")
+
 from src.eda import (
-    load_data, calculate_headline_length, 
-    articles_per_publisher, analyze_publication_dates
+    load_data,
+    calculate_headline_length,
+    articles_per_publisher,
+    analyze_publication_dates,
 )
 from src.text_analysis import perform_sentiment_analysis, extract_common_keywords
 from src.time_series_analysis import publication_frequency_over_time, peak_publishing_times
 
 def main():
-    filepath = 'data/financial_news.csv'  # Replace with your actual data path
+    filepath = "data/raw_analyst_ratings.csv"  # Replace with your actual data path
     df = load_data(filepath)
     
     # Descriptive Statistics
