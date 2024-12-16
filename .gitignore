@@ -3,3 +3,4 @@ venv/
 
 # VS Code settings
 .vscode/
+data/

@@ -5,3 +5,5 @@ matplotlib
 plotly
 pyfolio-reloaded
 zipline-reloaded
+textblob
+scikit-learn
