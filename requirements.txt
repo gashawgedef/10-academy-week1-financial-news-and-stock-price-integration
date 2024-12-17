@@ -7,3 +7,7 @@ pyfolio-reloaded
 zipline-reloaded
 textblob
 scikit-learn
+gensim 
+wordcloud 
+nltk
+seaborn
